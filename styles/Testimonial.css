@@ -1,0 +1,472 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.restrict-scroll {
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+}
+
+.feedbacks-container {
+  height: 59%;
+}
+
+.main-comment-container {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.comments-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.comment-1 {
+  height: auto;
+  width: 400px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.comment-message-1 {
+  background-color: rgb(28, 28, 28);
+  color: rgb(236, 236, 236);
+  padding: 20px 20px;
+  line-height: 25px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.comment-message-2 {
+  color: rgb(24, 24, 24);
+  padding: 25px 18px 0px;
+  line-height: 25px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.recommendation-texts {
+  padding-top: 25px;
+}
+
+.arrow {
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid rgb(28, 28, 28);;
+  position: absolute;
+  bottom: -14px;
+  left: 36px;
+}
+
+.comment-profile {
+  display: flex;
+  padding-top: 20px;
+  padding-left: 8px;
+  height: 100px;
+}
+
+.comment-image {
+  border-radius: 100%;
+  margin-right: 20px;
+  align-self: center;
+}
+
+.comment-image img {
+  width: 85px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.comment-2 .comment-profile {
+  padding-top: 12px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-name {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.profile-role {
+  font-size: 17px;
+}
+
+.comment-2 {
+  height: auto;
+  width: 400px;
+  margin-bottom: 26px;
+  margin-right: 33px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-recommendation-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.recommendation-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.profile-picture {
+  height: 100%;
+  width: 307px;
+  border: 1px solid black;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+
+.recommendation-container .message {
+  height: auto;
+  max-width: 515px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(28, 28, 28);
+  color: rgb(236, 236, 236);
+  padding: 35px 35px 30px;
+}
+
+.recommendation-container .star {
+  color: gold;
+  font-size: 23px;
+  margin-right: -5.5px;
+}
+
+.recommendation-container .star-ratings{
+  padding-bottom: 15px;
+}
+
+.recommendation-container .profile-name {
+  font-size: 30px;
+  padding-bottom: 7px;
+}
+
+.recommendation-container .profile-role{
+  font-size: 17.5px;
+  padding-bottom: 30px;
+  color: grey;
+}
+
+.recommendation-container .recommendation-message {
+  font-size: 19px;
+}
+
+
+.main-encouragement-container {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-encouragement-container {
+  min-width: 200px;
+  overflow: hidden;
+}
+
+.encouragement-container {
+  max-width: 840px;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.encouragement-message {
+  text-align: center;
+  height: auto;
+}
+
+.inner-encouragement-message {
+  display: flex;
+  overflow: hidden;
+}
+
+.inner-encouragement-message .lists-of-messages {
+  display: flex;
+  transition:  0.3s;
+  transform: translateX(-810px);
+}
+
+.inner-encouragement-message .lists-of-messages div {
+  width: 820px;
+  padding: 40px 20px 0px;
+  overflow: auto;
+  height: 155px;
+  font-size: 18px;
+}
+
+
+
+
+
+
+@media (max-width: 920px) {
+  .comment-1 {
+    margin-right: 20px;
+    margin-bottom: 40px;
+    width: 300px;
+  }
+
+  .comment-2 .comment-profile {
+    padding-bottom: 10px;
+  }
+
+  .comment-2 {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 330px;
+  }
+  .comment-2 .comment-message-texts {
+    height: 175px;
+    overflow-y: auto;
+    max-width: 300px;
+  }
+
+  .comment-message-1,
+  .comment-message-2 {
+    font-size: 16px;
+  }
+
+  .comment-1 .profile-name,
+  .comment-2 .profile-name {
+    font-size: 20px;
+  }
+
+
+  .main-recommendation-container {
+    padding-bottom: 30px;
+  }
+
+  .recommendation-container {
+    position: relative;
+    justify-content: start;
+  }
+
+  .recommendation-container .profile-picture {
+    margin: 5px;
+    position: absolute;
+    left: 20px;
+    height: auto;
+    width: 140px;
+    align-self: center;
+    z-index: 1;
+  }
+
+
+  .recommendation-container .message {
+    margin: 0px;
+    padding: 20px 15px 20px 180px;
+    position: relative;
+    max-width: 100%;
+  }
+
+  .recommendation-container .profile-name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .recommendation-container .profile-role {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  .recommendation-message {
+    overflow-y: auto;
+    font-size: 14.5px !important;
+    height: 60px;
+  }
+
+  .encouragement-container {
+    padding: 20px 1% 20px;
+  }
+
+
+}
+
+@media (max-width: 679px){
+  .comments-container {
+    flex-direction: column;
+  }
+
+}
+
+
+@media (max-width: 880px) and (min-width: 800px) {
+
+  
+  .recommendation-container .profile-picture {
+    margin: 5px;
+    left: 20px !important;
+    height: auto;
+    width: 140px;
+    align-self: center;
+  }
+
+  .recommendation-container .message {
+    margin: 0px;
+  }
+}
+@media (min-width: 610px) and (max-width: 880px) {
+  .comment-1 {
+    margin-right: 15px;
+  }
+
+  .comment-2 .comment-message-texts {
+    height: 175px;
+    overflow-y: auto;
+  }
+
+  .comment-2 .profile-name {
+    font-size: 20px;
+  }
+}
+/* Iphone XR */
+@media (max-width: 550px) and (min-width: 400px) {
+
+  .recommendation-container .profile-role {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+
+  .recommendation-container .profile-picture {
+    left: 20px;
+  }
+
+  .recommendation-container .message {
+    margin: 0px;
+    padding: 20px 15px 20px 180px;
+  }
+
+  .encouragement-message {
+    font-size: 16px;
+    padding: 0px 10px;
+    overflow: hidden;
+  }
+
+  .persons-profile-pictures img {
+    width: 50px;
+    border-radius: 100%;
+  }
+
+
+  .persons-profile-pictures {
+    width: 260px;
+  }
+
+  .person-profile-names {
+    padding-bottom: 40px;
+    font-size: 20px;
+  }
+
+  .radio-label {
+    font-size: 15px;
+    padding: 10px !important;
+  }
+
+  .input-name {
+    align-self: flex-end;
+    padding-bottom: 10px;
+  }
+
+  .input-comment-1 {
+    resize: both;
+  }
+
+}
+
+
+@media (min-width: 540px) and (max-width: 575px){
+  .inner-encouragement-message .lists-of-messages div {
+    width: 500px;
+  }
+  .inner-encouragement-message .lists-of-messages {
+    transform: translateX(-490px);
+  }
+}
+
+
+@media (min-width: 500px) and (max-width: 540px){
+  .inner-encouragement-message .lists-of-messages div {
+    width: 460px;
+  }
+
+  .inner-encouragement-message .lists-of-messages {
+    transform: translateX(-460px);
+  }
+}
+
+@media (min-width: 470px) and (max-width: 500px){
+  .inner-encouragement-message .lists-of-messages div {
+    width: 425px;
+  }
+
+  .inner-encouragement-message .lists-of-messages {
+    transform: translateX(-435px);
+  }
+}
+
+@media (min-width: 445px) and (max-width: 470px){
+  .inner-encouragement-message .lists-of-messages div {
+    width: 365px;
+  }
+
+  .inner-encouragement-message .lists-of-messages {
+    transform: translateX(-365px);
+  }
+}
+
+@media (max-width: 445px) and (min-width: 400px){
+  .inner-encouragement-message .lists-of-messages div {
+    width: 345px;
+  }
+
+  .inner-encouragement-message .lists-of-messages {
+    transform: translateX(-345px);
+  }
+}
+
+
+

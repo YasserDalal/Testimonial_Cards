@@ -1,0 +1,53 @@
+.add-messages {
+  font-size: 35px;
+  font-weight: 300;
+  min-width: 50.3px;
+  height: 50px;
+  line-height: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(243, 243, 243);
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 9999;
+  top: -7px;
+  right: -6px;
+  background-color: rgb(50, 50, 50);
+  transition: transform 0.3s;
+}
+
+.spin {
+  animation: rotate 0.3s linear forwards;
+  transform-origin: center;
+}
+
+.add-messages:hover {
+  background-color: rgb(15, 15, 15);
+}
+
+.add-messages.dark {
+  background-color: rgb(227, 227, 227);
+  color: rgb(32, 32, 32);
+}
+
+.add-messages.dark:hover{
+  background-color: rgb(153, 153, 153);
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(180deg);
+  }
+}
+
+@media (hover: none) {
+  .add-messages.dark:hover{
+    background-color: rgb(227, 227, 227);
+  }
+}

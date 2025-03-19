@@ -1,0 +1,80 @@
+.main-choices-container {
+  position: fixed;
+  top: 35px;
+  right: 35px;
+  width: 200px;
+  z-index: 100;
+}
+
+.choices-container {
+  background-color: rgb(201, 201, 201);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 100;
+  height: 0px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.choices-container ul {
+  height: 200px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.choices-container ul li {
+  background-color: rgb(227, 227, 227);
+  border-bottom: 1px solid black;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.2s background-color color 0.2s;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.choices-container ul li:hover {
+  color: rgb(223, 223, 223);
+  background-color: rgb(69, 69, 69);
+}
+
+.choices-container.pick {
+  height: 300px;
+  animation: ease modalMotion1 0.5s;
+}
+
+.choices-container.unpick {
+  height: 0px;
+  animation: ease modalMotion2 0.5s;
+}
+
+@keyframes modalMotion1 {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 300px;
+  }
+}
+
+@keyframes modalMotion2 {
+  from {
+    height: 300px;
+  }
+
+  to {
+    height: 0px;
+  }
+}

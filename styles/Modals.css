@@ -1,0 +1,127 @@
+.header-modal {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.message-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.input-comment-1 {
+  resize: none;
+  width: 441px;
+  height: 200px;
+  font-size: 20px;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.input-name {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 1px solid black;
+  width: 200px;
+  height: 40px;
+}
+
+.name-thoughts-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.thoughts-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.thoughts {
+  padding-bottom: 10px;
+}
+
+.select-thoughts {
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Itago ang default na radio button */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+/* Gawa ng custom button */
+.radio-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Kapag nakapili */
+input[type="radio"]:checked + .radio-label {
+  background: #3498db;
+  color: white;
+}
+
+.role-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pick-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 350px;
+}
+
+.profile-pick-image-container img {
+  width: 80px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.image-active {
+  box-shadow: 2px 2px 2px black;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: rgb(0, 130, 130);
+  border: none;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.2s;
+}
+
+.button-container button:hover {
+  background-color: rgb(0, 89, 89);
+}
+
+@media (max-width: 600px){
+  .profile-pick-image-container img {
+    width: 50px;
+  }
+}
